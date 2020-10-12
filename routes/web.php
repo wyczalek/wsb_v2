@@ -104,7 +104,7 @@ Route::get('/wsb', function () {
 Route::get('/loop', function () {
 //    return view('loop');
     $car = [
-        ['mark' => 'Ford','model' => 'Focus', 'color' => 'srebrny'],
+        ['mark' => 'Fo rd','model' => 'Focus', 'color' => 'srebrny'],
         ['mark' => 'Fiat','model' => '126p', 'color' => 'biały'],
         ['mark' => 'Ferarri','model' => 'F430', 'color' => 'czerwony'],
     ];
