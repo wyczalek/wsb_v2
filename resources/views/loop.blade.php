@@ -17,7 +17,7 @@
         th{
             background-color: antiquewhite;
         }
-    </style>
+    </style> 
 {{--<table>
         <tr>
             <th>Marka</th>

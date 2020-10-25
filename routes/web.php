@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\WsbSite;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\usercontroller1;
 
 // use $namespace = 'App\Http\Controllers';
 
@@ -126,3 +127,11 @@ Route::get('/userform', function () {
 });
 
 Route::post('usercontroller', [UserController::class, 'account']);
+
+// Route::get('/user', function () {
+//     return view('user');
+// });
+
+Route::view('user','user');
+Route::post('usercontroller1', [usercontroller1::class, 'index']);
+
