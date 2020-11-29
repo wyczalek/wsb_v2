@@ -135,3 +135,11 @@ Route::post('usercontroller', [UserController::class, 'account']);
 Route::view('user','user');
 Route::post('usercontroller1', [usercontroller1::class, 'index']);
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
