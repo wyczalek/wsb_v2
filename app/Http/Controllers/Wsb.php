@@ -10,7 +10,7 @@ class Wsb extends Controller
 {
     function index(){
         // return DB::select('SELECT * FROM user');
-        // return DB::table('user')->get();
+        return DB::table('user')->get();
 
         // return DB::table('user')
         // ->where('surname','Nowak') 
@@ -22,7 +22,7 @@ class Wsb extends Controller
 
         // echo getype($data);
         // echo $data;
-        $data = DB::table('user')->find(3);
+        // $data = DB::table('user')->find(3);
 
         // echo '<pre>'; 
         //     print_r($data);
@@ -42,19 +42,25 @@ class Wsb extends Controller
         //     ]
         // );
 
-        $data = DB::table('user')
-        ->where(
-            [
-                'name'=>'Agnieszka',
-                'surname'=>'Kowalska'
-            ]
-        )
-        ->update(
-            [
-                'name'=>'Anna',
-                'surname'=>'Nowak'
-            ]
-        );
+        // $data = DB::table('user')
+        // ->where(
+        //     [
+        //         'name'=>'Agnieszka',
+        //         'surname'=>'Kowalska'
+        //     ]
+        // )
+        // ->update(
+        //     [
+        //         'name'=>'Anna',
+        //         'surname'=>'Nowak'
+        //     ]
+        // );
+
+        // $data = DB::table('user')->max('height');
+        // $data = DB::table('user')->min('height');
+        // $data = DB::table('user')->sum('weight');
+        // $data = DB::table('user')->avg('weight');
+        // $data = DB::table('user')->count('weight');
 
         echo '<pre>'; 
             print_r($data);
